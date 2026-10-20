@@ -34,7 +34,6 @@ func longestPrefix(words []string) string {
 
 // pairIndices возвращает индексы двух разных элементов по возрастанию.
 func pairIndices(input PairInput) [2]int {
-	// TODO: найти единственную пару с суммой input.Target.
 	var m = make(map[int]int)
 
 	for i, num := range input.Nums {
@@ -49,7 +48,6 @@ func pairIndices(input PairInput) [2]int {
 
 // hasDuplicate сообщает, встречается ли какое-либо значение повторно.
 func hasDuplicate(nums []int) bool {
-	// TODO: проверить наличие повторов.
 	var m = make(map[int]struct{})
 
 	for _, num := range nums {
